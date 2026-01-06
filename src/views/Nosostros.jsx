@@ -1,9 +1,13 @@
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 const Nosotros = () => {
   return (
-    <div>
-      <h1>Nosotros</h1>
-      <p>Página de nosotros.</p>
-    </div>
+    <>
+      <div>
+        <h2>Quienes somos</h2>
+        <p>Página de quienes somos.</p>
+      </div>
+    </>
   )
 }
 

@@ -1,9 +1,13 @@
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 const Inicio = () => {
   return (
-    <div>
-      <h1>Inicio</h1>
-      <p>Página de inicio.</p>
-    </div>
+    <>
+      <div>
+        <h2>Inicio</h2>
+        <p>Página de inicio.</p>
+      </div>
+    </>
   )
 }
 

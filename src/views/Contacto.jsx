@@ -1,9 +1,14 @@
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 const Contacto = () => {
   return (
-    <div>
-      <h1>Contacto</h1>
-      <p>Página de contacto.</p>
-    </div>
+    <>
+      <div>
+        <h2>Contacto</h2>
+        <p>Página de contacto.</p>
+      </div>
+    </>
+    
   )
 }
 
