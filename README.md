@@ -37,16 +37,16 @@ Luego abrir el navegador en la URL indicada por Vite (por defecto `http://localh
 
 ### Página estática
 
-![estática]()
+![Estática](https://raw.githubusercontent.com/AndyMartinezB/UTN-reactJs-tarea-7/main/public/images/estatica.jpg)
 
 ### Página dinámica
 
-![dinámica]()
+![Dinámica](https://raw.githubusercontent.com/AndyMartinezB/UTN-reactJs-tarea-7/main/public/images/dinamica.jpg)
 
 ### Página protegida
 
-![protegida]()
-
+![Protegida Acceso](https://raw.githubusercontent.com/AndyMartinezB/UTN-reactJs-tarea-7/main/public/images/protegida%20(acceso).jpg)
+![Protegida Denegado](https://raw.githubusercontent.com/AndyMartinezB/UTN-reactJs-tarea-7/main/public/images/protegida%20(denegado).jpg)
 
 ## Créditos
 
