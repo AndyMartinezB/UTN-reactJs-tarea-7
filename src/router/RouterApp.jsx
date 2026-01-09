@@ -3,6 +3,7 @@ import Inicio from "../views/Inicio.jsx";
 import Nosotros from "../views/Nosostros.jsx";
 import Contacto from "../views/Contacto.jsx";
 import NotFound from "../views/NotFound.jsx";
+import Configuracion from "../views/Configuracion.jsx";
 import Layout from "../components/Layout.jsx";
 
 const RouterApp = () => {  return (
@@ -14,6 +15,7 @@ const RouterApp = () => {  return (
           <Route path="inicio" element={ <Inicio />} />
           <Route path="nosotros" element={<Nosotros />} />
           <Route path="contacto" element={<Contacto />} />
+          <Route path="configuracion" element={<Configuracion />} />
           <Route path="*" element={<NotFound />} />
         </Route>  
       </Routes>

@@ -1,5 +1,4 @@
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import ReturnToHome from "../components/ReturnToHome"
 const Nosotros = () => {
   return (
     <>
@@ -7,6 +6,7 @@ const Nosotros = () => {
         <h2>Quienes somos</h2>
         <p>Página de quienes somos.</p>
       </div>
+      <ReturnToHome />
     </>
   )
 }
