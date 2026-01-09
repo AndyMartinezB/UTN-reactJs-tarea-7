@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 import "../styles/inicio.css";
 const Inicio = () => {
   
@@ -25,13 +26,16 @@ const Inicio = () => {
           <h3>Nuestros productos</h3>
           <div className="products-list">
             {products.map((product) => (
-              <div>
+              <div key={product.id} className="product-card">
                 <img src={product.image} alt="" />
                 <h4>{product.title}</h4>
                 <p>{product.description}</p>
                 <div className="buy">
                   <p>{product.price} usd</p>
                   <button>Comprar</button>
+                  <Link to={`/producto/${product.id}`}>
+                    <button>Ver página</button>
+                  </Link>
                 </div>
               </div>
             ))}

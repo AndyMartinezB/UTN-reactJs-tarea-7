@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
-import Login from "./Login";
+import Login from "../views/Login";
 const Header = () => {
   return (
-    <header>
+    <header className="header">
       <h1>Tarea Nº7: Mini dashboard - Rutas públicas y protegidas</h1>
-      <Login />  
+      <Link to="/login">
+        Iniciar sesion
+      </Link>  
     </header>
   );
 };

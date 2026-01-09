@@ -1,0 +1,8 @@
+.detalle-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: peru;
+  border-radius: 10px;
+  box-shadow: 3px 4px 9px -6px rgba(0, 0, 0, 0.75);
+}
