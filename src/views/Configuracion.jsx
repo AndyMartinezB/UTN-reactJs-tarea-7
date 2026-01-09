@@ -1,19 +1,23 @@
 import ReturnToHome from "../components/ReturnToHome";
+import "../styles/configuracion.css";
+
 const Configuracion = ({ user, handleLogout }) => {
   return (
-    <>
-      <div>
+    <div className="config-container">
+      
+      <div className="config-info">
         <h2>Configuración</h2>
-        <p>Página de configuración. Usuario admitido: {user?.name}</p>
+        <p>Usuario admitido: <strong>{user?.name}</strong></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis earum corrupti animi laboriosam fuga quam architecto omnis quos? Voluptatum assumenda accusantium nesciunt. Quia inventore dolorem sit possimus, architecto et.</p>
       </div>
-      <button 
-        onClick={handleLogout} 
-        style={{ background: "red", color: "white", padding: "10px", marginTop: "20px" }}
-      >
+      <button className="button-logout" onClick={handleLogout}>
         Cerrar Sesión
       </button>
-      <ReturnToHome />
-    </>
+      <div style={{ marginTop: '20px' }}>
+        <ReturnToHome />
+      </div>
+
+    </div>
   );
 };
 

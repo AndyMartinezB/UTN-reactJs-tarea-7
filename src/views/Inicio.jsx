@@ -4,26 +4,35 @@ import "../styles/inicio.css";
 const Inicio = () => {
   
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     
     const traerLosDatos = async () => {
-      
-      const respuestaDeLaApi = await fetch("https://fakestoreapi.com/products", { method: "GET" });
-      const data = await respuestaDeLaApi.json();
-      setProducts(data);
+      try {
+        const respuestaDeLaApi = await fetch("https://fakestoreapi.com/products", { method: "GET" });
+        const data = await respuestaDeLaApi.json();
+        setProducts(data);
+      } catch (error) {
+        console.error("Error cargando productos:", error);
+      } finally {
+        // 2. Al terminar (sea éxito o error), apagamos el loading
+        setLoading(false);
+      }
     };
 
     traerLosDatos();
   }, []);
+
   return (
     <>
-      <div>
-        <h2>Inicio</h2>
-        <p>Página de inicio.</p>
-      </div>
       <section className="products">
-          <h3>Nuestros productos</h3>
+          <h2>Nuestros productos</h2>
+          {loading ? (
+            <div className="loading-container">
+              <p>Cargando productos...</p> 
+            </div>
+          ) : (
           <div className="products-list">
             {products.map((product) => (
               <div key={product.id} className="product-card">
@@ -40,7 +49,9 @@ const Inicio = () => {
               </div>
             ))}
           </div>
+          )}
         </section>
+        
     </>
   )
 }

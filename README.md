@@ -9,6 +9,13 @@ la UTN.BA. La tarea consiste en implementar una navegación básica entre difere
  la creación de rutas dinámicas con useParams y query params con useSearchParams y
  la implementación de rutas anidadas con <Outlet> y rutas protegidas con redirección post-login usando useLocation y Navigate.
  
+## Decisiones de diseño
+- Layout Persistente: Uso de Rutas Anidadas y Outlet para mantener una estructura fija (Header, Sidebar lateral y Footer) mientras cambia el contenido principal.
+
+- Para el enrutamiento Dinámico: Navegación hacia vistas de detalle de productos (/producto/:id) utilizando useParams para renderizar información específica consumida de FakeStoreAPI.
+
+- Para la ruta Protegida: Implementación del componente ProtectedRoute que restringe el acceso a la sección de "Configuración". Incluye un sistema de Autenticación Simulada (Login) con manejo de estado global de usuario y redirecciones automáticas (Navigate).
+
 ## Instrucciones
 
 Para clonar el repositorio desde tu terminal:

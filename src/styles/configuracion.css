@@ -1,0 +1,30 @@
+.config-container {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.config-info {
+    
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    
+}
+
+.button-logout {
+    background-color: #dc3545;
+    
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button-logout:hover {
+    background-color: #c82333;
+}
