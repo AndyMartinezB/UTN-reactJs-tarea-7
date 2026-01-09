@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../styles/login.css";
 
 const Login = ({ setUser }) => {
   const [username, setUsername] = useState("");
@@ -20,11 +21,12 @@ const Login = ({ setUser }) => {
   };
 
   return (
-    <div style={{ padding: "50px", textAlign: "center" }}>
+    <div className="login-container">
       <h2>Iniciar Sesión</h2>
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", maxWidth: "300px", margin: "auto", gap: "10px" }}>
-        
+      
+      <form onSubmit={handleSubmit} className="login-form">
         <input 
+          className="input-login"
           type="text" 
           placeholder="Usuario (Andy)" 
           value={username}
@@ -32,16 +34,17 @@ const Login = ({ setUser }) => {
         />
         
         <input 
+          className="input-login"
           type="password" 
           placeholder="Contraseña (UTNBA)" 
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         
-        <button type="submit">Ingresar</button>
+        <button className="button-login" type="submit">Ingresar</button>
       </form>
 
-      {error && <p style={{ color: "red" }}>Credenciales incorrectas</p>}
+      {error && <p className="error-message">Usuario y/o contraseña incorrectos</p>}
     </div>
   );
 };

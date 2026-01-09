@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/detalleProducto.css";
+import ReturnToHome from "../components/ReturnToHome";
 
 const DetalleProducto = () => {
   
@@ -22,10 +23,11 @@ const DetalleProducto = () => {
   return (
     <div className="detalle-container">
       <h2>{producto.title}</h2>
-      <img src={producto.image} alt={producto.title} style={{maxWidth: "200px"}} />
+      <img className="detalle-imagen" src={producto.image} alt={producto.title}/>
       <p>{producto.description}</p>
       <h3>Precio: ${producto.price}</h3>
       <p>Categoría: {producto.category}</p>
+      <ReturnToHome />
     </div>
   );
 };

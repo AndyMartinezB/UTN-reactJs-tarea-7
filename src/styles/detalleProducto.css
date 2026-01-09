@@ -6,3 +6,6 @@
   border-radius: 10px;
   box-shadow: 3px 4px 9px -6px rgba(0, 0, 0, 0.75);
 }
+.detalle-imagen {
+  max-width: 200px;
+}
